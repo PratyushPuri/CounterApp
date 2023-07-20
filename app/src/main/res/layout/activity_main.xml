@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Counter App"
+        android:textColor="#F5FF8E"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="0"
+        android:textColor="#FFB08E"
+        android:textSize="104sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/counter" />
+
+    <Button
+        android:id="@+id/bt"
+        style="@android:style/Widget.Material.Light.Button"
+        android:layout_width="167dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="104dp"
+        android:background="#8EFFB4"
+        android:foregroundTint="#FFB1B1"
+        android:text="Click To Count"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColorHighlight="#CD6262"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
